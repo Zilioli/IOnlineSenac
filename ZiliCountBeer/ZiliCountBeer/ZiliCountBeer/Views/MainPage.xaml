@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:views="clr-namespace:ZiliCountBeer.Views"
+            xmlns:local="clr-namespace:ZiliCountBeer.Controls"
+            x:Class="ZiliCountBeer.Views.MainPage"
+             BackgroundImage="beer.png" 
+             BackgroundColor="Azure">
+
+    <StackLayout Margin="32">
+        <Label Text="This is a Floating Action Button!" 
+           VerticalOptions="Center" 
+           HorizontalOptions="Center"/>
+
+        <local:FloatingActionButton 
+            x:Name="FAB" 
+            HorizontalOptions="CenterAndExpand" 
+            WidthRequest="50" 
+            HeightRequest="50"  
+            VerticalOptions="CenterAndExpand" 
+            Image="ic_add_white.png" 
+            ButtonColor="#03A9F4"
+            Text="+"/>
+    </StackLayout>
+
+</ContentPage>
